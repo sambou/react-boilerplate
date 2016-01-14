@@ -7,7 +7,6 @@ import App          from './containers/app.js';
 
 import './style.scss';
 
-
 document.addEventListener('DOMContentLoaded', () => {
 
   let store = createStore();
