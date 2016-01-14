@@ -1,12 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React        from 'react';
+import ReactDOM     from 'react-dom';
+import { Router, Route, IndexRoute } from 'react-router';
+import { Provider } from 'react-redux';
+import createStore  from './store/index.js';
+import App          from './containers/app.js';
 
 import './style.scss';
 
-import app from './app.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  ReactDOM.render(React.createElement(app), document.getElementById('app-hook'));
+  let store = createStore();
+
+  ReactDOM.render(
+    <Provider store={store}>
+      <Router>
+        <Route path='/' component={App} />
+      </Router>
+    </Provider>,
+    document.getElementById('app-hook'));
 
 });
