@@ -37,6 +37,15 @@
     },
     "jquery/jquery.d.ts": {
       "commit": "7577a2f4c134790891c52affdacdae99d802571b"
+    },
+    "assertion-error/assertion-error.d.ts": {
+      "commit": "7577a2f4c134790891c52affdacdae99d802571b"
+    },
+    "mocha/mocha.d.ts": {
+      "commit": "7577a2f4c134790891c52affdacdae99d802571b"
+    },
+    "chai/chai.d.ts": {
+      "commit": "7577a2f4c134790891c52affdacdae99d802571b"
     }
   }
 }

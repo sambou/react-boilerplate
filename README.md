@@ -15,6 +15,7 @@ My current scaffold for (Java|Type)Script apps with React & Redux. Use at your o
 - [ ] Add immutable data structures
 - [ ] Configure webpack-dev-server
 - [ ] Setup Redux debugger
+- [ ] Server-side rendering
 
 ## Misc
 - Unit tests are run as a precommit hook
