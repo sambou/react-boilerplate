@@ -1,5 +1,5 @@
 {
-  "name": "frontend-shell-vanilla",
+  "name": "react-app-scaffold",
   "version": "0.0.1",
   "description": "Frontend scaffold based on node.js/express server, webpack build tool, React as view library ...",
   "repository": "https://github.com/sambou/react-app-scaffold",
