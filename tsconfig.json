@@ -3,6 +3,8 @@
   "filesGlob": [
     "./src/**/*.ts",
     "./src/**/*.tsx",
+    "./test/**/*.ts",
+    "./test/**/*.tsx",
     "!./node_modules/**/*.ts",
     "./typings/tsd.d.ts"
   ],
@@ -25,6 +27,7 @@
     "./src/components/no-match.tsx",
     "./src/containers/app.tsx",
     "./src/index.tsx",
+    "./test/no-match.tsx",
     "./typings/tsd.d.ts"
   ],
   "exclude": [],
