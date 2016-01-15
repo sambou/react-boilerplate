@@ -5,7 +5,7 @@ var loaders = require('./webpack/loaders');
 var extensions = require('./webpack/extensions.js');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: './src/index.tsx',
     output: {
         path: __dirname + '/target',
         filename: 'bundle.js',

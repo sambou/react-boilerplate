@@ -1,9 +1,8 @@
-import React                         from 'react';
-import { connect, Provider }         from 'react-redux';
-import createStore                   from '../store/index.js';
-import NoMatch                       from '../components/no-match.js';
-import { changeSampleText, changeAsyncSampleText } from '../actions/index.js';
-
+import * as React                from 'react';
+import { connect, Provider }     from 'react-redux';
+import createStore               from '../store/index.ts';
+import NoMatch                   from '../components/no-match.tsx';
+import { changeAsyncSampleText } from '../actions/index.ts';
 
 let select = (state) => {
   return {

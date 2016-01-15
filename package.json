@@ -6,7 +6,7 @@
   "scripts": {
     "prestart": "rm -rf target",
     "start": "NODE_ENV=development node index.js & ./node_modules/.bin/webpack --watch",
-    "test": "./node_modules/.bin/mocha --compilers js:babel-register",
+    "test": "./node_modules/.bin/mocha --require ts-node/register test/**/*",
     "postinstall": "bash bin/build.sh",
     "build": "NODE_ENV=production ./node_modules/.bin/webpack -p --config webpack.production.config.js --optimize-minimize"
   },
@@ -24,8 +24,10 @@
     "html-loader": "^0.4.0",
     "html-webpack-plugin": "^1.7.0",
     "image-webpack-loader": "^1.6.2",
+    "jsdom": "^7.2.2",
     "node-sass": "^3.4.2",
     "react": "^0.14.6",
+    "react-addons-test-utils": "^0.14.6",
     "react-dom": "^0.14.6",
     "react-redux": "^4.0.6",
     "react-router": "^1.0.3",
@@ -33,6 +35,10 @@
     "redux-thunk": "^1.0.3",
     "sass-loader": "^3.1.2",
     "style-loader": "^0.13.0",
+    "ts-loader": "^0.7.2",
+    "ts-node": "^0.5.5",
+    "tsd": "^0.6.5",
+    "typescript": "^1.7.5",
     "webpack": "^1.12.10"
   },
   "devDependencies": {

@@ -10,6 +10,11 @@ module.exports = [
     }
   },
   {
+    test: /\.ts(x?)/,
+    loader: 'babel!ts-loader',
+    exclude: /node_modules/
+  },
+  {
     test: /\.(scss)$/,
     loader: ExtractTextPlugin.extract('style-loader', '!css-loader!sass-loader'),
     exclude: /node_modules/

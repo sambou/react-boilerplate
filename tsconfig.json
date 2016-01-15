@@ -1,0 +1,34 @@
+{
+  "compileOnSave": false,
+  "filesGlob": [
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "!./node_modules/**/*.ts",
+    "./typings/tsd.d.ts"
+  ],
+  "compilerOptions": {
+    "jsx": "react",
+    "noEmitOnError": true,
+    "module": "commonjs",
+    "sourceMap": true,
+    "target": "es6"
+  },
+  "files": [
+    "./src/actions/index.ts",
+    "./src/middleware/logger.ts",
+    "./src/reducers/index.ts",
+    "./src/store/index.ts",
+    "./src/typings/assertion-error/assertion-error.d.ts",
+    "./src/typings/chai/chai.d.ts",
+    "./src/typings/mocha/mocha.d.ts",
+    "./src/typings/tsd.d.ts",
+    "./src/components/no-match.tsx",
+    "./src/containers/app.tsx",
+    "./src/index.tsx",
+    "./typings/tsd.d.ts"
+  ],
+  "exclude": [],
+  "atom": {
+    "rewriteTsconfig": true
+  }
+}

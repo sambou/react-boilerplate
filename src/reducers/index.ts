@@ -1,4 +1,4 @@
-import { SAMPLE_ACTION, SAMPLE_SUCCESS, SAMPLE_FAILURE } from '../actions/index.js';
+import { SAMPLE_ACTION, SAMPLE_SUCCESS, SAMPLE_FAILURE } from '../actions/index.ts';
 
 let initialState = {
   sampleText: 'Hi there.'

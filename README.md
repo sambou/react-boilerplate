@@ -1,1 +1,1 @@
-My current shell setup for JavaScript apps
+My current scaffold for (Java|Type)Script apps with React & Redux.
