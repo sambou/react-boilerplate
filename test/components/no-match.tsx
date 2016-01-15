@@ -1,7 +1,7 @@
 import {assert, expect} from 'chai';
-import * as React from 'react';
-import * as TestUtils from 'react-addons-test-utils';
-import NoMatch from '../src/components/no-match.tsx';
+import * as React       from 'react';
+import * as TestUtils   from 'react-addons-test-utils';
+import NoMatch          from '../../src/components/no-match.tsx';
 
 describe('NoMatch view aka 404 page', () => {
 

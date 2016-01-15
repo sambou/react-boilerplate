@@ -27,7 +27,7 @@
     "./src/components/no-match.tsx",
     "./src/containers/app.tsx",
     "./src/index.tsx",
-    "./test/no-match.tsx",
+    "./test/components/no-match.tsx",
     "./typings/tsd.d.ts"
   ],
   "exclude": [],
