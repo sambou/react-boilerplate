@@ -1,7 +1,7 @@
 {
   "name": "frontend-shell-vanilla",
   "version": "0.0.1",
-  "description": "Frontend shell based on node.js/express server, webpack build tool, React as view library ...",
+  "description": "Frontend scaffold based on node.js/express server, webpack build tool, React as view library ...",
   "repository": "https://github.com/sambou/react-app-scaffold",
   "main": "index.js",
   "scripts": {
