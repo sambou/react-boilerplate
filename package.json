@@ -14,6 +14,7 @@
   "author": "Sami Boussaid <sboussaid3@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "assertion-error": "^1.0.1",
     "babel": "^6.3.26",
     "babel-loader": "^6.2.1",
     "babel-preset-es2015": "^6.3.13",
