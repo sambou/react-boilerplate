@@ -1,6 +1,8 @@
 ## React App Scaffold
 My current scaffold for (Java|Type)Script apps with React & Redux. Use at your own risk. PRs are more than welcome.
 
+[![Dependency Status](https://david-dm.org/sambou/react-app-scaffold.svg)](https://david-dm.org/sambou/react-app-scaffold)
+
 ## Setup
 - ```git clone https://github.com/sambou/react-app-scaffold```
 - ```npm install```
