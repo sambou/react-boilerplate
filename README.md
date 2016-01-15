@@ -3,6 +3,7 @@ My current scaffold for (Java|Type)Script apps with React & Redux. Use at your o
 
 [![Dependency Status](https://david-dm.org/sambou/react-app-scaffold.svg)](https://david-dm.org/sambou/react-app-scaffold)
 [![Build Status](https://travis-ci.org/sambou/react-app-scaffold.svg?branch=master)](https://travis-ci.org/sambou/react-app-scaffold)
+[![Demo on Heroku](https://img.shields.io/badge/heroku-demo-blue.svg)](https://react-app-scaffold.herokuapp.com)
 
 ## Setup
 - ```git clone https://github.com/sambou/react-app-scaffold```
