@@ -1,9 +1,9 @@
-import * as React    from 'react';
-import * as ReactDOM from 'react-dom';
+import * as React                    from 'react';
+import * as ReactDOM                 from 'react-dom';
 import { Router, Route, IndexRoute } from 'react-router';
-import { Provider } from 'react-redux';
-import createStore  from './store/index.ts';
-import App          from './containers/app.tsx';
+import { Provider }                  from 'react-redux';
+import createStore                   from './store/index.ts';
+import App                           from './containers/app.tsx';
 
 import './style.scss';
 
