@@ -18,7 +18,7 @@ My current scaffold for (Java|Type)Script apps with React & Redux. Use at your o
 - [ ] Setup Redux debugger
 - [ ] Server-side rendering
 - [ ] Add normalizr
-- [ ] Add http abstraction (library)
+- [ ] Add fetch (polyfill)
 - [ ] Add smart .npmrc
 
 ## Misc
