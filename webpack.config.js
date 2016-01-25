@@ -1,3 +1,4 @@
+var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
@@ -19,7 +20,10 @@ module.exports = {
             template: './src/index.html',
             favicon: './src/favicon.ico'
         }),
-        new ExtractTextPlugin('bundle.css')
+        new ExtractTextPlugin('bundle.css'),
+        new webpack.ProvidePlugin({
+          'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
+        })
     ],
     module: {
         loaders: loaders

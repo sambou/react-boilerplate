@@ -4,26 +4,31 @@ export const SAMPLE_ASYNC   = 'SAMPLE_ASYNC';
 export const SAMPLE_SUCCESS = 'SAMPLE_SUCCESS';
 export const SAMPLE_FAILURE = 'SAMPLE_FAILURE';
 
-export function changeAsyncSampleText(text) {
+interface GitHubAPIResponse {
+  name: string,
+  location: string,
+};
+
+type AsyncAction<T> = (dispatch: (a: Action) => void, getState: () => any) => Promise<T>;
+
+export function changeAsyncSampleText(text): AsyncAction<GitHubAPIResponse> {
   return (dispatch, getState) => {
 
     dispatch(changeSampleText('LOADING...'));
 
-    let p = new Promise((resolve, reject) => {
+    let p = fetch('https://api.github.com/users/octocat');
 
-      let b = Math.random() > 0.5 ? true : false;
-
-      setTimeout(() => {
-        if (b === true) {
-          resolve('Success!');
-        } else {
-          reject('Failure!');
+    return p
+      .then(
+        (res): Promise<GitHubAPIResponse> => res.json(),
+        e => dispatch(changeSampleText(e))
+      )
+      .then(
+        json => {
+          dispatch(changeSampleText(`searched for ${json.name} from ${json.location}`));
+          return json;
         }
-      }, 1000);
-
-    });
-
-    return p.then(s => dispatch(changeSampleText(s)), e => dispatch(changeSampleText(e)));
+      );
   };
 }
 
