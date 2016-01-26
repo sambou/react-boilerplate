@@ -17,7 +17,6 @@ My current scaffold for (Java|Type)Script apps with React & Redux. Use at your o
 - [ ] Setup Redux debugger
 - [ ] Server-side rendering
 - [ ] Add normalizr
-- [ ] Add smart .npmrc
 
 ## Misc
 - Unit tests are run as a precommit hook
