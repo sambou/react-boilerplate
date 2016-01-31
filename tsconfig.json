@@ -16,7 +16,7 @@
     "target": "es6"
   },
   "files": [
-    "./src/actions/ation.ts",
+    "./src/actions/action.ts",
     "./src/actions/index.ts",
     "./src/middleware/logger.ts",
     "./src/reducers/index.ts",
