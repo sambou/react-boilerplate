@@ -21,10 +21,10 @@
     "./src/middleware/logger.ts",
     "./src/reducers/index.ts",
     "./src/store/index.ts",
-    "./src/components/no-match.tsx",
+    "./src/components/sample-page.tsx",
     "./src/containers/app.tsx",
     "./src/index.tsx",
-    "./test/components/no-match.tsx",
+    "./test/components/sample-page.tsx",
     "./typings/tsd.d.ts"
   ],
   "exclude": [],

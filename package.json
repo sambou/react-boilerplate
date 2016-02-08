@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "prestart": "rm -rf target",
-    "start": "NODE_ENV=development node index.js & ./node_modules/.bin/webpack --watch",
+    "start": "NODE_ENV=development node index.js & ./node_modules/.bin/webpack --watch --config webpack.development.config.js",
     "test": "./node_modules/.bin/mocha --require ts-node/register test/**/*",
     "postinstall": "bash bin/build.sh",
     "build": "NODE_ENV=production ./node_modules/.bin/webpack -p --config webpack.production.config.js --optimize-minimize"
@@ -50,6 +50,14 @@
     "whatwg-fetch": "^0.11.0"
   },
   "devDependencies": {
-    "redux-devtools": "^3.0.1"
+    "babel-plugin-react-transform": "2.0.0",
+    "eventsource-polyfill": "0.9.6",
+    "react-transform-catch-errors": "1.0.2",
+    "react-transform-hmr": "1.0.2",
+    "redbox-react": "1.2.2",
+    "redux-devtools": "3.1.0",
+    "webpack-dev-middleware": "1.5.1",
+    "webpack-dev-server": "1.14.1",
+    "webpack-hot-middleware": "2.6.4"
   }
 }

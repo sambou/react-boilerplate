@@ -6,7 +6,7 @@ var loaders = require('./webpack/loaders');
 var extensions = require('./webpack/extensions.js');
 
 module.exports = {
-    entry: './src/index.tsx',
+    entry: ['eventsource-polyfill', 'webpack-hot-middleware/client', './src/index.tsx'],
     output: {
         path: __dirname + '/target',
         filename: 'bundle.js',
@@ -23,7 +23,9 @@ module.exports = {
         new ExtractTextPlugin('bundle.css'),
         new webpack.ProvidePlugin({
           'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
-        })
+        }),
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.NoErrorsPlugin(),
     ],
     module: {
         loaders: loaders

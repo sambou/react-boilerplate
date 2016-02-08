@@ -1,7 +1,7 @@
 import { SAMPLE_ACTION, SAMPLE_SUCCESS, SAMPLE_FAILURE } from '../actions/index.ts';
 
 let initialState = {
-  sampleText: 'Hi there.'
+  sampleText: 'void'
 };
 
 let appReducer = (state = initialState, action) => {

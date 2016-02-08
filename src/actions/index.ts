@@ -5,8 +5,7 @@ export const SAMPLE_SUCCESS = 'SAMPLE_SUCCESS';
 export const SAMPLE_FAILURE = 'SAMPLE_FAILURE';
 
 interface GitHubAPIResponse {
-  name: string,
-  location: string,
+  login: string,
 };
 
 type AsyncAction<T> = (dispatch: (a: Action) => void, getState: () => any) => Promise<T>;
@@ -16,7 +15,7 @@ export function changeAsyncSampleText(text): AsyncAction<GitHubAPIResponse> {
 
     dispatch(changeSampleText('LOADING...'));
 
-    let p = fetch('https://api.github.com/users/octocat');
+    let p = fetch(`https://api.github.com/users?since=${Math.floor(Math.random() * 1000)}`);
 
     return p
       .then(
@@ -24,9 +23,9 @@ export function changeAsyncSampleText(text): AsyncAction<GitHubAPIResponse> {
         e => dispatch(changeSampleText(e))
       )
       .then(
-        json => {
-          dispatch(changeSampleText(`searched for ${json.name} from ${json.location}`));
-          return json;
+        users => {
+          dispatch(changeSampleText(users[0].login));
+          return users;
         }
       );
   };
