@@ -12,9 +12,8 @@ My current scaffold for (Java|Type)Script apps with React & Redux. Use at your o
 - ```npm run build``` gets run automatically in production environments via postinstall hook
 
 ## TODOs
+- [ ] Replace tsd with [typings](https://github.com/typings/typings)
 - [ ] Add immutable data structures
-- [ ] Configure webpack-dev-server
-- [ ] Setup Redux debugger
 - [ ] Server-side rendering
 - [ ] Add normalizr
 
