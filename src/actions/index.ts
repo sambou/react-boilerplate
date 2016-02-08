@@ -19,14 +19,20 @@ export function changeAsyncSampleText(text): AsyncAction<GitHubAPIResponse> {
 
     return p
       .then(
-        (res): Promise<GitHubAPIResponse> => res.json(),
-        e => dispatch(changeSampleText(e))
+        (res): Promise<GitHubAPIResponse> => {
+          if (res.ok) {
+            return res.json();
+          } else {
+            throw new Error('Something went wrong.');
+          }
+        }
       )
       .then(
         users => {
           dispatch(changeSampleText(users[0].login));
           return users;
-        }
+        } ,
+        e => dispatch(changeSampleText(e.toString()))
       );
   };
 }
