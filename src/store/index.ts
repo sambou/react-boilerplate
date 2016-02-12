@@ -4,9 +4,8 @@ import appReducer                       from '../reducers/index.ts';
 import logger                           from '../middleware/logger.ts';
 
 export default (reducer: Redux.Reducer = appReducer): Redux.Store => {
-  console.log(thunkMiddleware);
   let createStoreWithMiddleware = compose(
-    applyMiddleware(thunkMiddleware['default'], logger),
+    applyMiddleware(thunkMiddleware, logger),
     window['devToolsExtension'] ? window['devToolsExtension']() : f => f
   )(createStore);
 
