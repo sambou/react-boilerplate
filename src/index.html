@@ -1,16 +1,10 @@
 <html>
     <head>
-        {% for (var i = 0; i < o.htmlWebpackPlugin.files.css.length; i++) { %}
-        <link href="/{%= o.htmlWebpackPlugin.files.css[i] %}" rel="stylesheet"></link>
-        {% } %}
         <base href="/">
         <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
         <title>Scaffold TS App</title>
     </head>
     <body>
         <div id="app-hook"></div>
-        {% for (var i = 0; i < o.htmlWebpackPlugin.files.js.length; i++) { %}
-        <script type="text/javascript" src="{%= o.htmlWebpackPlugin.files.js[i] %}"></script>
-        {% } %}
     </body>
 </html>
