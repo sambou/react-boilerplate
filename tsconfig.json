@@ -6,7 +6,7 @@
     "./test/**/*.ts",
     "./test/**/*.tsx",
     "!./node_modules/**/*.ts",
-    "./typings/tsd.d.ts"
+    "./typings/main.d.ts"
   ],
   "compilerOptions": {
     "jsx": "react",
@@ -25,7 +25,7 @@
     "./src/containers/app.tsx",
     "./src/index.tsx",
     "./test/components/sample-page.tsx",
-    "./typings/tsd.d.ts"
+    "./typings/main.d.ts"
   ],
   "exclude": [],
   "atom": {
