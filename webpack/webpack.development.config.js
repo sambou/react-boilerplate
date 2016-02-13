@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var ManifestPlugin = require('webpack-manifest-plugin');
 var appRoot = require('app-root-path');
 var loaders = require('./loaders');
 var extensions = require('./extensions');
@@ -24,6 +25,7 @@ module.exports = {
         new webpack.ProvidePlugin({
           'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
         }),
+        new ManifestPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoErrorsPlugin(),
     ],

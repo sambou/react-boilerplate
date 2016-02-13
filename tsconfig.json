@@ -28,7 +28,8 @@
     "./src/client/components/sample-page.tsx",
     "./src/client/containers/app.tsx",
     "./src/client/index.tsx",
-    "./test/client/components/sample.ts",
+    "./src/client/noscript/index.tsx",
+    "./src/server/noscript/index.tsx",
     "./test/client/components/sample-page.tsx",
     "./typings/main.d.ts"
   ],

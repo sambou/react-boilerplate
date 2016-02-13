@@ -49,6 +49,7 @@
     "typings": "0.6.8",
     "webpack": "^1.12.10",
     "webpack-hot-middleware": "2.7.1",
+    "webpack-manifest-plugin": "1.0.0",
     "whatwg-fetch": "^0.11.0"
   },
   "devDependencies": {

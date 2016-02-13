@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var ManifestPlugin = require('webpack-manifest-plugin');
 var appRoot = require('app-root-path');
 var loaders = require('./loaders.js');
 var extensions = require('./extensions.js');
@@ -21,6 +22,7 @@ module.exports = {
             favicon: './src/client/favicon.ico'
         }),
         new ExtractTextPlugin('bundle.[hash].css'),
+        new ManifestPlugin(),
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.DefinePlugin({
           'process.env': {
