@@ -1,5 +1,10 @@
+@font-face {
+    font-family: 'Fira';
+    src: url('./fonts/fira-regular.otf');
+}
+
 body {
-    font-family: "Goudy Bookletter 1911", sans-serif;
+    font-family: 'Fira';
     margin: auto;
     width: 70%;
     height: 100%;

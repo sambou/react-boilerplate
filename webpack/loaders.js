@@ -25,6 +25,11 @@ module.exports = [
     exclude: /node_modules/
   },
   {
+    test: /\.otf$/,
+    loader: 'file',
+    exclude: /node_modules/
+  },
+  {
     test: /\.(jpe?g|png|gif|svg)$/i,
     exclude: /node_modules/,
     loaders: [
