@@ -1,6 +1,7 @@
 {
   "compileOnSave": false,
   "filesGlob": [
+    "./webpack/webpack.development.config.js",
     "./src/**/*.ts",
     "./src/**/*.tsx",
     "./test/**/*.ts",
@@ -16,15 +17,18 @@
     "target": "es6"
   },
   "files": [
-    "./src/actions/action.ts",
-    "./src/actions/index.ts",
-    "./src/middleware/logger.ts",
-    "./src/reducers/index.ts",
-    "./src/store/index.ts",
-    "./src/components/sample-page.tsx",
-    "./src/containers/app.tsx",
-    "./src/index.tsx",
-    "./test/components/sample-page.tsx",
+    "./webpack/webpack.development.config.js",
+    "./src/client/actions/action.ts",
+    "./src/client/actions/index.ts",
+    "./src/client/middleware/logger.ts",
+    "./src/client/reducers/index.ts",
+    "./src/client/store/index.ts",
+    "./src/server/index.ts",
+    "./src/server/webpack-dev-tools.ts",
+    "./src/client/components/sample-page.tsx",
+    "./src/client/containers/app.tsx",
+    "./src/client/index.tsx",
+    "./test/client/components/sample-page.tsx",
     "./typings/main.d.ts"
   ],
   "exclude": [],

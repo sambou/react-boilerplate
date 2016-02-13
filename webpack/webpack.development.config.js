@@ -1,14 +1,14 @@
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-
-var loaders = require('./webpack/loaders');
-var extensions = require('./webpack/extensions.js');
+var appRoot = require('app-root-path');
+var loaders = require('./loaders');
+var extensions = require('./extensions');
 
 module.exports = {
-    entry: ['eventsource-polyfill', 'webpack-hot-middleware/client', './src/index.tsx'],
+    entry: ['eventsource-polyfill', 'webpack-hot-middleware/client', './src/client/index.tsx'],
     output: {
-        path: __dirname + '/target',
+        path: appRoot.path + '/target',
         filename: 'bundle.js',
         hash: false
     },
@@ -17,8 +17,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html',
-            favicon: './src/favicon.ico'
+            template: './src/client/index.html',
+            favicon: './src/client/favicon.ico'
         }),
         new ExtractTextPlugin('bundle.css'),
         new webpack.ProvidePlugin({

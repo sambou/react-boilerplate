@@ -13,7 +13,6 @@ My current scaffold for (Java|Type)Script apps with React & Redux. Use at your o
 - ```npm run build``` gets run automatically in production environments via postinstall hook
 
 ## TODOs
-- [ ] TS on server
 - [ ] Server-side rendering
 - [ ] Add immutable data structures
 - [ ] Add normalizr

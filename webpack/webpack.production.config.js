@@ -1,14 +1,14 @@
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-
-var loaders = require('./webpack/loaders.js');
-var extensions = require('./webpack/extensions.js');
+var appRoot = require('app-root-path');
+var loaders = require('./loaders.js');
+var extensions = require('./extensions.js');
 
 module.exports = {
-    entry: './src/index.tsx',
+    entry: './src/client/index.tsx',
     output: {
-        path: __dirname + '/target',
+        path: appRoot.path + '/target',
         filename: 'bundle.[hash].js',
         hash: true
     },
@@ -17,8 +17,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html',
-            favicon: './src/favicon.ico'
+            template: './src/client/index.html',
+            favicon: './src/client/favicon.ico'
         }),
         new ExtractTextPlugin('bundle.[hash].css'),
         new webpack.optimize.OccurenceOrderPlugin(),
@@ -33,5 +33,6 @@ module.exports = {
     ],
     module: {
         loaders: loaders
-    }
+    },
+    devtool: 'source-map',
 };

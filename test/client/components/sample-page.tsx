@@ -1,7 +1,7 @@
 import {assert, expect} from 'chai';
 import * as React       from 'react';
 import * as TestUtils   from 'react-addons-test-utils';
-import SamplePage       from '../../src/components/sample-page.tsx';
+import SamplePage       from '../../../src/client/components/sample-page.tsx';
 
 describe('SamplePage', () => {
 
