@@ -17,6 +17,7 @@ My current scaffold for TypeScript apps with React & Redux. Use at your own risk
 - [ ] Add normalizr
 - [ ] Add more testing facilities (e.g. Nock, nice integration test boilerplate)
 - [ ] Find a way to decouple boilerplate code from application code
+- [ ] Add server-side authentication (passport.js, cookies)
 
 ## Misc
 - Unit tests are run as a precommit hook
