@@ -13,8 +13,10 @@ My current scaffold for TypeScript apps with React & Redux. Use at your own risk
 - ```npm run build``` gets run automatically in production environments via postinstall hook
 
 ## TODOs
-- [ ] Add immutable data structures
+- [ ] Add Immutable.js
 - [ ] Add normalizr
+- [ ] Add more testing facilities (e.g. Nock, nice integration test boilerplate)
+- [ ] Find a way to decouple boilerplate code from application code
 
 ## Misc
 - Unit tests are run as a precommit hook
