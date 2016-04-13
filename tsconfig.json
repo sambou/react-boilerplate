@@ -14,7 +14,9 @@
     "noEmitOnError": true,
     "module": "commonjs",
     "sourceMap": true,
-    "target": "es6"
+    "target": "es6",
+    "allowJs": true,
+    "outDir": "./ts/"
   },
   "files": [
     "./webpack/webpack.development.config.js",
