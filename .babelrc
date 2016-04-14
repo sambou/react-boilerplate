@@ -1,8 +1,13 @@
 {
-  "presets": ["react", "es2015"],
+  "presets": ["react", "es2015", "stage-3"],
   "env": {
     "development": {
       "plugins": [
+        ["transform-runtime", {
+          "regenerator": true
+        }],
+        "transform-regenerator",
+        "transform-async-to-generator",
         ["react-transform", {
           "transforms": [{
             "transform": "react-transform-hmr",
