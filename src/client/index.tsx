@@ -8,7 +8,6 @@ import App                           from './containers/app.tsx';
 import './style.scss';
 
 document.addEventListener('DOMContentLoaded', () => {
-
   let store = createStore();
 
   ReactDOM.render(
@@ -18,5 +17,4 @@ document.addEventListener('DOMContentLoaded', () => {
       </Router>
     </Provider>,
     document.getElementById('app-hook'));
-
 });
