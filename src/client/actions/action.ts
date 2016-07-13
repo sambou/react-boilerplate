@@ -1,3 +1,0 @@
-interface Action {
-  type: string
-};

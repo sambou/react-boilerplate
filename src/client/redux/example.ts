@@ -8,7 +8,7 @@ interface GitHubAPIResponse {
   login: string,
 };
 
-type AsyncAction<T> = (dispatch: (a: Action) => void, getState: () => any) => Promise<T>;
+type AsyncAction<T> = (dispatch: (a) => void, getState: () => any) => Promise<T>;
 
 export function changeAsyncSampleText(text): AsyncAction<string> {
   return async function(dispatch, getState) {
@@ -41,3 +41,32 @@ async function parseUsers(response) {
 export function changeSampleText(text) {
   return {type: SAMPLE_ACTION, text};
 }
+
+let initialState = {
+  sampleText: 'void'
+};
+
+let appReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case SAMPLE_ACTION:
+      return Object.assign({}, state, {
+        sampleText: action.text
+      });
+
+    case SAMPLE_SUCCESS:
+      return Object.assign({}, state, {
+        sampleText: action.text
+      });
+
+    case SAMPLE_FAILURE:
+      return Object.assign({}, state, {
+        sampleText: action.text
+      });
+
+    default:
+      return state;
+  }
+
+};
+
+export default appReducer;

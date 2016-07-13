@@ -1,19 +1,15 @@
-import * as React                from 'react';
-import { connect, Provider }     from 'react-redux';
-import SamplePage                from '../components/sample-page.tsx';
-import { changeAsyncSampleText } from '../actions/index.ts';
+import * as React from 'react';
+import { connect, Provider } from 'react-redux';
+import SamplePage from '../components/sample-page.tsx';
+import { changeAsyncSampleText } from '../redux/example';
 
-let select = (state) => {
-  return {
-    sampleText: state.sampleText
-  };
-};
+let select = ({ example }) => ({ sampleText: example.sampleText });
 
-let App = React.createClass({
+class App extends React.Component<{dispatch: any, sampleText: string}, {}> {
 
-  handleSampleAction() {
-    this.props.dispatch(changeAsyncSampleText(Math.random().toString()));
-  },
+  handleSampleAction = () => {
+    this.props.dispatch(changeAsyncSampleText(''));
+  }
 
   render() {
     return (
@@ -21,6 +17,6 @@ let App = React.createClass({
     );
   }
 
-});
+}
 
 export default connect(select)(App);

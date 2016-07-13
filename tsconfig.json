@@ -7,7 +7,7 @@
     "./test/**/*.ts",
     "./test/**/*.tsx",
     "!./node_modules/**/*.ts",
-    "./typings/main.d.ts"
+    "./typings/index.d.ts"
   ],
   "compilerOptions": {
     "jsx": "react",
@@ -20,11 +20,10 @@
   },
   "files": [
     "./webpack/webpack.development.config.js",
-    "./src/client/actions/action.ts",
-    "./src/client/actions/index.ts",
-    "./src/client/middleware/logger.ts",
-    "./src/client/reducers/index.ts",
-    "./src/client/store/index.ts",
+    "./src/client/redux/create.ts",
+    "./src/client/redux/example.ts",
+    "./src/client/redux/middleware/logger.ts",
+    "./src/client/redux/root.ts",
     "./src/server/index.ts",
     "./src/server/webpack-dev-tools.ts",
     "./src/client/components/sample-page.tsx",
@@ -33,7 +32,7 @@
     "./src/client/noscript/index.tsx",
     "./src/server/noscript/index.tsx",
     "./test/client/components/sample-page.tsx",
-    "./typings/main.d.ts"
+    "./typings/index.d.ts"
   ],
   "exclude": [],
   "atom": {
