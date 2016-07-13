@@ -1,10 +1,10 @@
 ## React App Scaffold
 My current scaffold for TypeScript apps with React & Redux. Use at your own risk. PRs are more than welcome.
 
-[![Dependency Status](https://david-dm.org/sambou/react-app-scaffold.svg)](https://david-dm.org/sambou/react-app-scaffold)
-[![devDependency Status](https://david-dm.org/sambou/react-app-scaffold/dev-status.svg)](https://david-dm.org/sambou/react-app-scaffold#info=devDependencies)
-[![Build Status](https://travis-ci.org/sambou/react-app-scaffold.svg?branch=master)](https://travis-ci.org/sambou/react-app-scaffold)
-[![Demo on Heroku](https://img.shields.io/badge/heroku-demo-blue.svg)](https://react-app-scaffold.herokuapp.com)
+[![Dependency Status](https://david-dm.org/sambou/react-boilerplate.svg)](https://david-dm.org/sambou/react-boilerplate)
+[![devDependency Status](https://david-dm.org/sambou/react-boilerplate/dev-status.svg)](https://david-dm.org/sambou/react-boilerplate#info=devDependencies)
+[![Build Status](https://travis-ci.org/sambou/react-boilerplate.svg?branch=master)](https://travis-ci.org/sambou/react-boilerplate)
+[![Demo on Heroku](https://img.shields.io/badge/heroku-demo-blue.svg)](https://react-boilerplate.herokuapp.com)
 
 ## Setup
 - ```npm install```
